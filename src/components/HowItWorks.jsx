@@ -34,22 +34,22 @@ const steps = [
 
 const HowItWorks = () => {
     return (
-        <section className="py-24 bg-saffron-50 relative overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-24 bg-saffron-50 relative overflow-hidden w-full">
             {/* Background decoration */}
             <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
-                <div className="absolute top-1/4 left-0 w-96 h-96 bg-saffron-200 rounded-full blur-[100px]"></div>
-                <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-brand-accent rounded-full blur-[100px]"></div>
+                <div className="absolute top-1/4 left-0 w-64 sm:w-96 h-64 sm:h-96 bg-saffron-200 rounded-full blur-[100px]"></div>
+                <div className="absolute bottom-1/4 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-brand-accent rounded-full blur-[100px]"></div>
             </div>
 
-            <div className="container mx-auto px-6 relative z-10">
-                <div className="text-center mb-20 text-saffron-900">
+            <div className="container mx-auto px-4 sm:px-6 relative z-10">
+                <div className="text-center mb-12 sm:mb-16 md:mb-20 text-saffron-900">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className="text-sm font-bold tracking-widest text-saffron-600 uppercase mb-3">Simple & Intuitive</h2>
-                        <h3 className="text-4xl md:text-5xl font-bold font-serif">How Sankalp Works</h3>
+                        <h2 className="text-xs sm:text-sm font-bold tracking-widest text-saffron-600 uppercase mb-2 sm:mb-3">Simple & Intuitive</h2>
+                        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif">How Sankalp Works</h3>
                     </motion.div>
                 </div>
 

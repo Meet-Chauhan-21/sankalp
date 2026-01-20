@@ -3,10 +3,10 @@ import { Sparkles, Scroll, Activity, Heart } from 'lucide-react';
 
 const WhatIsNaamJaap = () => {
     return (
-        <section className="py-24 relative overflow-hidden bg-gradient-to-b from-brand-accent/50 to-white">
+        <section className="py-16 sm:py-20 md:py-24 relative overflow-hidden bg-gradient-to-b from-brand-accent/50 to-white w-full">
             {/* Decorative Background Elements */}
-            <div className="absolute top-0 right-0 opacity-5 pointer-events-none translate-x-1/4 -translate-y-1/4 select-none">
-                <span className="text-[400px] leading-none text-saffron-600 font-serif">🕉</span>
+            <div className="absolute top-0 right-0 opacity-5 pointer-events-none translate-x-1/4 -translate-y-1/4 select-none hidden sm:block">
+                <span className="text-[200px] sm:text-[300px] md:text-[400px] leading-none text-saffron-600 font-serif">🕉</span>
             </div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-saffron-100 rounded-full blur-3xl opacity-40 -translate-x-1/2 translate-y-1/2"></div>
 
@@ -25,16 +25,16 @@ const WhatIsNaamJaap = () => {
                             <span>Ancient Wisdom for Modern Minds</span>
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-8 leading-tight">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 sm:mb-8 leading-tight">
                             Connect with the <span className="text-transparent bg-clip-text bg-gradient-to-r from-saffron-600 to-brand-orange">Divine</span> through Sound.
                         </h2>
 
-                        <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                        <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
                             <span className="font-bold text-gray-800">Naam Jaap</span> is more than just repetition; it is a sacred technology for the mind. By chanting names like <span className="text-saffron-600 font-medium">Ram, Krishna, or Shiv</span>, you tune your consciousness to a higher, purer frequency.
                         </p>
 
-                        <div className="bg-white/80 backdrop-blur-md border-l-4 border-saffron-500 p-8 rounded-r-2xl shadow-sm hover:shadow-md transition-shadow">
-                            <p className="italic text-gray-700 font-medium text-lg">
+                        <div className="bg-white/80 backdrop-blur-md border-l-4 border-saffron-500 p-4 sm:p-6 md:p-8 rounded-r-2xl shadow-sm hover:shadow-md transition-shadow">
+                            <p className="italic text-gray-700 font-medium text-base sm:text-lg">
                                 "Just as fire burns fuel to ashes, the Name of God burns away all sins and impurities of the mind."
                             </p>
                         </div>
