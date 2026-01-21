@@ -35,7 +35,7 @@ const CTA = () => {
     return (
         <>
             {/* FAQ Section */}
-            <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-saffron-50 to-orange-50 px-4 sm:px-6 w-full overflow-hidden">
+            <section id="faq" className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-saffron-50 to-orange-50 px-4 sm:px-6 w-full overflow-hidden">
                 <div className="container mx-auto max-w-6xl">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         
@@ -253,13 +253,13 @@ const CTA = () => {
                                     href="#"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="flex items-center gap-3 bg-gray-900 text-white px-6 py-4 rounded-2xl hover:bg-gray-800 transition-all shadow-lg group"
+                                    className="inline-block"
                                 >
-                                    <Smartphone size={28} className="group-hover:scale-110 transition-transform" />
-                                    <div className="text-left">
-                                        <p className="text-xs text-gray-400">GET IT ON</p>
-                                        <p className="font-bold text-lg">Google Play</p>
-                                    </div>
+                                    <img 
+                                        src="/images/google-play-badge.svg" 
+                                        alt="Get it on Google Play" 
+                                        className="h-14 w-auto"
+                                    />
                                 </motion.a>
 
                                 {/* Apple App Store Button */}
@@ -267,13 +267,13 @@ const CTA = () => {
                                     href="#"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="flex items-center gap-3 bg-gray-900 text-white px-6 py-4 rounded-2xl hover:bg-gray-800 transition-all shadow-lg group"
+                                    className="inline-block"
                                 >
-                                    <Apple size={28} className="group-hover:scale-110 transition-transform" />
-                                    <div className="text-left">
-                                        <p className="text-xs text-gray-400">Download on the</p>
-                                        <p className="font-bold text-lg">App Store</p>
-                                    </div>
+                                    <img 
+                                        src="/images/ios-download.png" 
+                                        alt="Download on the App Store" 
+                                        className="h-14 w-auto"
+                                    />
                                 </motion.a>
                             </div>
                         </motion.div>
